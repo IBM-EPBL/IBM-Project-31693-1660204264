@@ -14,7 +14,8 @@ Original file is located at
 s = "Hi there Sam!"
 
 s = "Hi there Sam!"
-x= s.split()
+
+x = s.split()
 
 print(x)
 
@@ -51,23 +52,22 @@ array=np.zeros(10)
 print("An array of 10 zeros:")
 print(array)
 
-import numpy as np
 array=np.ones(10)*5
 print("An array of 10 fives:")
 print(array)
 
+
+
 """## 5. Create an array of all the even integers from 20 to 35"""
 
 import numpy as np
-array=np.arange(20,35,2)
+array=np.arange(30,71,2)
 print("Array of all the even integers from 20 to 35")
 print(array)
 
 """## 6. Create a 3x3 matrix with values ranging from 0 to 8"""
 
-import numpy as np
-x =  np.arange(0, 9).reshape(3,3)
-print(x)
+np.arange(0,9).reshape((3,3))
 
 """## 7. Concatenate a and b 
 ## a = np.array([1, 2, 3]), b = np.array([4, 5, 6])
@@ -91,8 +91,11 @@ print(arr)
 import pandas as pd
 
 import pandas as pd
-data = [['tom', 10], ['nick', 15], ['juli', 14]] 
+  
+data = [['tom', 10], ['nick', 15], ['juli', 14]]
+
 df = pd.DataFrame(data, columns=['Name', 'Age'])
+  
 df
 
 """## 9. Generate the series of dates from 1st Jan, 2023 to 10th Feb, 2023"""
@@ -116,7 +119,9 @@ lists = [[1, 'aaa', 22],
 
 lists = [[1, 'aaa', 22], [2, 'bbb', 25], [3, 'ccc', 24]]
 
-import pandas as pd    
-lists = [[1, 'aaa', 22], [2, 'bbb', 25], [3, 'ccc', 24]]  
-df = pd.DataFrame(lists, columns =['Tag','letters','number']) 
+import pandas as pd  
+      
+
+lst = [['aaa', 22], ['bbb', 25],  ['ccc', 26]]   
+df = pd.DataFrame(lst, columns =['Tag', 'number']) 
 print(df )
